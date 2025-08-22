@@ -1,0 +1,66 @@
+
+1. Calcular la suma de los números pares menores o iguales a N, donde N es pedido al usuario.
+    Entradas: valor (N)
+    Proceso:
+        1.1 Solicitar valor N al usuario 
+        1.2 Establecer un contador (C) = 0
+        1.3 Establecer Sumatoria (S) = 0
+        1.4 While C <= N (si el contador es menos al numero indicado por el usuario)
+            1.4.1 Sumar Sumatoria = Sumatoria(S) + Contador(C)
+            1.4.2 Sumar Contador = Contador + 2
+        1.5. imprimir el valor de Solicitar
+    Salida: 
+        Valor de S (Sumatoria)
+
+
+2. Dadas tres cantidades enteras positivas que representan la longitud de tres segmentos de línea, 
+   se quiere determinar las siguientes situaciones:
+   Entradas: los tres valores de los lados (a)(b)(c)
+   Proceso: 
+        2.1 solicitar el valor a, b, C
+        2.2 SI a+b>c Y b+c>a Y c+a>b
+            2.2.1 imprimir "es un triangulo"
+            2.2.3 SINO (Else) imprimir "no es un triangulo"
+            2.2.4 SI a=b=c 
+                2.4.1 imprimir "es equilatero"
+            2.2.5 si a,b o c es igual a,b o C
+                2.5.1 imprimir "es isosceles"
+        2.3 SINO imprimir "no es un triangulo"
+    Salidas: 
+        Es triangulo o no
+        si es un triangulo es equilatero o isosceles
+
+
+
+3. Dado un número, obtener su inverso numérico. Por ejemplo, si el número es 1234, el resultado debe ser 4321.
+    Entradas: Numero (N)
+    Proceso: 
+        3.0 Ingresar valor N
+        3.1 Convertir el valor N a texto (string)
+        3.2 Inverso = Usamos el indice inverso del string para escribir 
+        3.3 print (Inverso)
+    Salida: 
+        Inverso
+
+
+5. Determinar si un número es primo o no. Un número primo es aquel que sólo puede ser divido entre la unidad y el mismo.
+    Entradas: Numero (N)
+    Proceso: 
+        5.1 ingresar el Valor seleccionado (N) 
+        5.2 if (N menor que 1)
+            5.2.1 imprimir "no es primo"
+        5.3 if (N = 2)
+            5.3.1 imprimir "es primo"
+        5.4 if (N % 2 (residuo)) = 0
+            5.4.1 imprimir "no es primo"
+        5.5 else
+            5.5.1 iniciar i = 3
+            5.5.2 repetir mientras i <= raiz de N
+                5.5.2.1 if (N % i = 0)
+                    5.5.2.1.1 imprimir "no es primo"
+                    5.5.2.1.2 salir del ciclo
+                5.5.2.2 incrementar i en 2
+            5.5.3 si no se encontró divisor
+                5.5.3.1 imprimir "es primo"
+    Salida: 
+        "es primo o no"
