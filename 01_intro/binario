@@ -1,0 +1,51 @@
+"""
+Entradas y variables (int):
+numero
+digito
+invertido
+
+
+operadores:
+if 
+While
+>
+//
+=
+%
+*
+
+operaciones:
+digito = numero % 2
+binario = str(digito) + binario  
+numero = numero // 2
+
+salidas:
+"programa para convertir un numero a binario"
+"Ingresa un numero: "
+("Numero invertido:", binario)
+
+
+1.- Inicio 
+2.- ingresar numero
+3.- Establecer variable binario como texto
+4.- comenzar while y meter numero
+   4.1.- dividir numero ente dos obteniendo su residuo
+   4.2.- convertir digito a string (texto), sumarle binario y asignar ese valor a binario
+   4.3.- eliminar el ultimo digito del numero al dividirlo entre 2
+5.- se imprime el resultado
+6.- fin del algoritmo 
+
+
+"""
+
+print ("programa para convertir un numero a binario")
+numero = int(input("Ingresa un número: "))
+binario = ""
+
+while numero > 0:
+    digito = numero % 2
+    binario = str(digito) + binario  
+    numero = numero // 2
+
+print("Número en Binario:", binario)
+
