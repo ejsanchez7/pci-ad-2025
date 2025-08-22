@@ -1,0 +1,59 @@
+"""
+Entradas y variables (int):
+N
+sumatoria
+sumatoria2
+
+operadores:
+if 
+=
+==
+<
+%
+*
+-
+/
+
+
+operaciones:
+(N + 2)*(N/4)
+(N + 1)*((N-1)/4)
+
+salidas:
+"programa para calcular la sumatoria de todos los pares menores e iguales a N"
+"ingrese numero: "
+"No es valido"
+("El resultado es: ", sumatoria)
+("El resultado es: ", sumatoria2)
+
+
+1.- inicio
+2.- se pide el numero N
+2.- se determina como es el numero dado
+  2.1.- si el numero dado es igual o menor a 0 se especifica que no es valido
+  2.2.- si este es par se sigue
+  2.3.- si es impar tambien
+3.- si es par, para poder saber la suma de todos sus pares menores e iguales a el, se utiliza la siguiente formula (N + 2)*(N/4)
+4.- si es impar, se utiliza la siguiente formula (N + 1)*((N-1)/4) siendo esta una version adapatada para numeros impares 
+5.- se imprime el resultado
+6.- termina el algoritmo
+"""
+
+print ("programa para calcular la sumatoria de todos los pares menores e iguales a N")
+N = int(input("ingrese numero: "))
+
+if N <= 0:
+
+    print ("No es valido")
+
+elif N % 2 == 0:
+   
+ sumatoria= (N + 2)*(N/4)  
+
+ print ("El resultado es: ", sumatoria)
+
+else: 
+ sumatoria2= (N + 1)*((N-1)/4)  
+
+ print ("El resultado es: ", sumatoria2)
+
