@@ -1,0 +1,11 @@
+numero = input('numero: ')
+
+inverso = [len(numero)]
+
+j=0
+while j < len(numero):
+    for i in numero:
+        inverso[j] == i
+        j+=1
+        
+print(inverso)
