@@ -1,0 +1,51 @@
+"""
+Entradas y variables (int):
+numero
+digito
+invertido
+
+
+operadores:
+if 
+While
+>
+//
+=
+%
+*
+
+operaciones:
+digito = numero % 10       
+invertido = invertido * 10 + digito
+numero = numero // 10
+
+salidas:
+"programa para invertir un numero"
+"Ingresa un numero: "
+("Numero invertido:", invertido)
+
+
+1.- inicio
+2.-pedir el numero N 
+3.- establecer a inverito con un valor de 0 al comienzo
+4.- Utilizar un While para ir eliminando las ultimas cifras e ir guardandolas 
+5.- operacion 
+   5.1.- primero se utiliza % para determinar el residuo de el numero al dividirlo entre 10 (se divide entre diez para obtener el ultipo numero como residuo)
+   5.2.- se almacena el residuo 
+   5.3.- se multiplica el valor de invertido (0) por 10 y se suma el digito obtenido anteriormente
+   5.4.- se guarda el resultado como valor de invertido 
+   5.5.- se quita el ultimo digito de el numero dividido entre 10
+   5.5.- esto se repite hasta que el valor de numero sea 0
+6.- se imprime el valor de invertido, siendo este el numero original invertido
+7.- termina el algoritmo
+"""
+print ("programa para invertir un numero")
+numero = int(input("Ingresa un numero: "))
+invertido = 0
+
+while numero > 0:
+    digito = numero % 10       
+    invertido = invertido * 10 + digito
+    numero = numero // 10      
+
+print("Numero invertido:", invertido)
