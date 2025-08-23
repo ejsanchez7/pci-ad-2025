@@ -1,0 +1,53 @@
+"""
+Problema:
+  Determinar si un número es primo o no. Un número primo es aquel que sólo puede ser divido entre la unidad y el mismo.
+
+Entradas:
+  N - entero
+
+salidas: 
+  (string | texto | cadena)
+  "No es valido"
+  "No es un numero primo"
+  "Es un numero primo"
+
+proceso:
+
+  1.- inicio
+  2.- ingresar numero N
+  3.- determinar si el numero es valido (no valido seria menor o igual a cero)
+    3.1.- Si no es válido imprimir "No es válido"
+  4.- determinar que no sea 1
+    4.1.- Si es 1 imprimir "No es primo"
+  5.- si N no es ninguno de las anteriores entonces 
+    5.1.- Para todo i desde 2 hasta N-1
+      5.1.2.- Si algun valor dentro del rango es divisible entre N entonces 
+        5.1.2.1.- Imprimir "No es primo"
+      5.1.3.- si ningun valor dentro del rango es divisible entre N entonces 
+        5.1.3.1.- Imprimir "es primo"
+  6.- Fin del programa 
+"""
+
+print ("programa para determinar si un numero es primo")
+N = int(input("ingrese numero: "))
+
+if N <= 0:
+
+    print ("No es valido")
+
+elif N == 1: 
+   
+       print ("No es un numero primo")
+
+elif N >= 0:
+ 
+  for i in range(2, N-1):  
+     
+        if N % i == 0: 
+
+          print ("No es un numero primo")
+
+        else: 
+          print ("Es un numero primo")
+        break
+ 

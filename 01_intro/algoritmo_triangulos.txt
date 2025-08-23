@@ -1,0 +1,24 @@
+PROBLEMA:
+    determinar el tipo de triángulo (equilátero, escaleno, isóseles) Dadas
+    las dimensiones de sus tres lados.
+
+ENTRADAS:
+    a - decimal
+    b - decimal
+    c - decimal
+
+PROCESO:
+
+    1.- solicitar el valor a, b, c
+    2.- SI a + b > c Y b + c > a Y c + a > b
+        2.2.- imprimir "es un triangulo"
+        2.3.- SI a = b = c 
+            2.3.1.- imprimir "es equilatero"
+        2.4.- SINO SI a,b o c es igual a,b o C
+            2.4.1.- imprimir "es isosceles"
+        2.5.- SINO
+            2.5.1.- IMPRIMIR "Es escaleno"
+    3.- SINO (Else) imprimir "no es un triangulo"
+
+SALIDA:
+    "es equilátero" | "es isóseles" | "es escaleno" | "No es triángulo" - String
